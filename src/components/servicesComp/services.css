@@ -1,0 +1,19 @@
+.servicesMainDiv {
+    color: white;
+}
+.ContainerGridServive{
+    width: 100%!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.itemGridService {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+    border-radius: 10px;
+   
+    margin: 2%!important;
+}

@@ -1,0 +1,17 @@
+.aboutUsMainDiv {
+    margin-top: 14%;
+    color: white;
+}
+.grid1AboutUs {
+    position: relative;
+    left: 15%;
+}
+.grid2AboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid2AboutUs >img {
+    width: 48%;
+}

@@ -1,0 +1,27 @@
+.mainHeaderDiv {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 3vw;
+}
+.navButtonsDiv{
+    display: flex;
+}
+.mainHeaderDiv> .imgDiv {
+    width: 50%;
+}
+.mainHeaderDiv> .navButtonsDiv {
+    color: white;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 25px;
+    background: #00416A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.mainHeaderDiv> .imgDiv >img {
+    width:16%
+}
