@@ -1,0 +1,30 @@
+.modelBox {
+    background: #093028;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.field {
+    height: 5vh;
+    
+    border-radius: 11px;
+    color: white;
+    background-color: transparent;
+}
+.buttonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vw;
+}
+input:-webkit-autofill { 
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: white;
+}
+.field:focus {
+    outline: none !important;
+    border-color: #719ECE!important;
+    box-shadow: 0 0 10px #719ECE !important;
+  }

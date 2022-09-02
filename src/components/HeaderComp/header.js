@@ -1,6 +1,6 @@
 import Grid from "@material-ui/core/Grid";
 import "./header.css"
-import logo from "../../images/header/devzWareLogo.png"
+import logo from "../../images/header/LOGO.png"
 function Header() {
   return (
     <div className="mainHeaderDiv">

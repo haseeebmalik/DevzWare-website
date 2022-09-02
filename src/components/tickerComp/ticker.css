@@ -1,0 +1,7 @@
+.tickerMainDiv {
+    background: linear-gradient(109.46deg, rgba(201, 201, 201, 0.8) 1.57%, rgba(196, 196, 196, 0.1) 100%);
+}
+
+.tickerMainDiv >p{
+    margin-right: 50px;
+}

@@ -11,17 +11,23 @@
     width: 50%;
 }
 .mainHeaderDiv> .navButtonsDiv {
+   margin-right: 5vw;
     color: white;
     width: 50%;
     display: flex;
     justify-content: space-around;
     border-radius: 25px;
-    background: #00416A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(109.46deg, rgba(201, 201, 201, 0.8) 1.57%, rgba(196, 196, 196, 0.1) 100%)
 
 
 }
+.imgDiv {
+    
+    position: relative;
+    left: 6vw;
+    top: 1vw;
+
+}
 .mainHeaderDiv> .imgDiv >img {
-    width:16%
+    width:30%
 }

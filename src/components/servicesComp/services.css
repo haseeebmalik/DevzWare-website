@@ -1,5 +1,6 @@
 .servicesMainDiv {
     color: white;
+    margin-bottom: 25%;
 }
 .ContainerGridServive{
     width: 100%!important;
@@ -12,8 +13,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: darkcyan;
+    background: linear-gradient(109.46deg, rgba(201, 201, 201, 0.8) 1.9%, rgba(196, 196, 196, 0.1) 100.33%);
+    opacity: 0.8;
     border-radius: 10px;
    
     margin: 2%!important;
+}
+.servicesIconDiv {
+    width: 33%;
+    height: 15vh;
+    background: #661C9B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
 }

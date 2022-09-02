@@ -1,0 +1,17 @@
+.ContainerGridContactUs{
+    width: 100%!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.itemGridContactUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 10px;
+   
+    margin: 2%!important;
+    color: white;
+}
