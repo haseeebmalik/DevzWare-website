@@ -4,11 +4,15 @@
     position: relative;
     top: 3vw;
 }
-.navButtonsDiv{
+/* .navButtonsDiv{
     display: flex;
-}
+} */
 .mainHeaderDiv> .imgDiv {
     width: 50%;
+
+    position: relative;
+    left: 6vw;
+    top: 1vw;
 }
 .mainHeaderDiv> .navButtonsDiv {
    margin-right: 5vw;
@@ -21,13 +25,26 @@
 
 
 }
-.imgDiv {
+/* .imgDiv {
     
     position: relative;
     left: 6vw;
     top: 1vw;
 
-}
+} */
 .mainHeaderDiv> .imgDiv >img {
     width:30%
+}
+.MobileMenuDiv {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .MobileMenuDiv {
+        display: flex;
+    }
+    .mainHeaderDiv> .navButtonsDiv {
+        display: none;
+     }
 }

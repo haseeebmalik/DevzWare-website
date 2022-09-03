@@ -1,6 +1,7 @@
 import Grid from "@material-ui/core/Grid";
 import "./header.css"
 import logo from "../../images/header/LOGO.png"
+import LongMenu from "./OnMobileHeaderMenu";
 function Header() {
   return (
     <div className="mainHeaderDiv">
@@ -14,6 +15,9 @@ function Header() {
         <h4>Blog</h4>
         <h4>Contact Us</h4>
         <h4>Start a Project</h4>
+      </div>
+      <div className="MobileMenuDiv">
+      <LongMenu  />
       </div>
     </div>
   );
