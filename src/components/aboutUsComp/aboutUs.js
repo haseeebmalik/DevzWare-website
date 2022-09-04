@@ -2,8 +2,8 @@ import "./aboutUs.css";
 import Grid from "@material-ui/core/Grid";
 import { green, purple } from '@material-ui/core/colors';
 import Button from '@material-ui/core/Button';
-import valueDrivenImg from "../../images/valueDriven/flying land.png"
-import circle from "../../images/aboutUs/CIRCLE.png"
+import circleRight from "../../images/aboutUs/CIRCLERIGHT.png"
+import circleLeft from "../../images/aboutUs/CIRCLELEFT.png"
 import DANDZ from "../../images/aboutUs/DANDZ.png"
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
@@ -26,44 +26,43 @@ const ColorButton = withStyles((theme) => ({
 function AboutUs() {
   return (
     <div className="aboutUsMainDiv">
-      <Grid container spacing={3} style={{ width: "100%" }}>
+      <img src={circleLeft} style={{ float: "left" }} />
+      <div className="gridAboutUS">
+        <Grid className="grid1AboutUs" container spacing={3} >
 
-        <Grid className="grid1AboutUs" item xs={8} sm={8} >
-          <img src={circle} />
-          {/* <div className="grid1AboutUsDiv1">
+          <Grid item xs={8} sm={5} >
 
-          </div> */}
-          <div className="grid1AboutUsDiv2">
-            <div className="grid1AboutUsDiv2InnerDiv1">
-            <h2>About Us </h2>
+            <h2 style={{ fontSize: "50px", color: "#bf186e" }}>About Us </h2>
 
-            <p style={{ width: "57%" }}>
-            We deliver high-quality, innovative, and cost-effective solutions for our clients worldwide. Our portfolio consists of top world startups that have grossed millions of dollars ranging in AI, Blockchain and Metaverse. Operating and booming with an excellent record of hundreds of local and international clients. Client satisfaction is our prime concern and to achieve this we use the latest generation technology and smart development skills to ensure in-time delivery
+            <p style={{ width: "70%" }}>
+              We deliver high-quality, innovative, and cost-effective solutions for our clients worldwide. Our portfolio consists of top world startups that have grossed millions of dollars ranging in AI, Blockchain and Metaverse.
+
             </p>
-            {/* <ColorButton
-            variant="contained"
-            color="primary"
-            endIcon={ArrowForwardIcon}
-            // className={classes.margin}
-          >
-            Read More 
-          </ColorButton> */}
-            <Button
+            <p style={{ width: "70%" }}>
+              Operating and booming with an excellent record of hundreds of local and international clients.
+              Client satisfaction is our prime concern and to achieve this we use the latest generation technology and smart development skills to ensure in-time delivery
+
+            </p>
+            <p style={{ width: "70%" }}>
+              Client satisfaction is our prime concern and to achieve this we use the latest generation technology and smart development skills to ensure in-time delivery
+
+            </p>
+            <ColorButton
               variant="contained"
-              color="secondary"
+              color="#661c9b"
               // className={classes.button}
               endIcon={<AiOutlineArrowRight />}
             >
               Read More
-            </Button>
-            </div>
-            <img className="DZ_IMG" style={{position:"relative", zIndex:"111"}} src={DANDZ}/>
-          </div>
-          <img src={circle} />
+            </ColorButton>
+            <img className="DZ_IMG" style={{ position: "relative", zIndex: "111" }} src={DANDZ} />
+
+
+          </Grid>
 
         </Grid>
-
-      </Grid>
+      </div>
+      <img src={circleRight} style={{ float: "right", top: "-315px" }} />
     </div>
   );
 }

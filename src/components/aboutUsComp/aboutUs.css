@@ -2,13 +2,22 @@
     
     color: white;
 }
-.grid1AboutUs {
+.gridAboutUS {
     position: relative;
-    left: 15%;
+    width: 80%;
+    top: -180px;
+    left: 12%;
+    border-radius: 27px;
+}
+.grid1AboutUs {
     display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
+    position: relative;
+    background: linear-gradient(109.46deg, rgba(201, 201, 201, 0.8) 1.9%, rgba(196, 196, 196, 0.1) 100.33%);
+    border-radius: 27px;
+    height: 80vh;
+    flex-direction: column;
 }
 
 

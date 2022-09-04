@@ -1,7 +1,7 @@
 .valueDrivenMainDiv {
 
-    margin-top: 24%;
-    margin-bottom: 28%;
+    margin-top: 10%;
+    margin-bottom: 15%;
     color: white;
 }
 
@@ -16,7 +16,7 @@
     top: 31%;
     left: 12%;
 
-   
+
     /* filter: blur(1px); */
     /* backdrop-filter: blur(84px); */
     /* Note: backdrop-filter has minimal browser support */
@@ -25,22 +25,22 @@
 }
 
 .ensuringFutureInnerDiv2 {
-        display: flex;
-         justify-content: center;
-         align-items: center;
-        position: relative;
-      
-        
-        background: linear-gradient(109.46deg, rgba(201, 201, 201, 0.66) 1.57%, rgba(196, 196, 196, 0.33) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(109.46deg, rgba(67, 50, 79, 0.8) 1.57%, rgba(67, 50, 79, 0.3) 100%);
     border-radius: 27px;
+    height: 80vh;
 }
+
 .insuringFutureInnerDiv {
     width: 86%;
-    
+
     position: relative;
     left: 8%;
     height: 59vh;
-    
+
     display: flex;
 }
 
@@ -48,32 +48,23 @@
 @media (min-width: 380px) and (max-width: 500px) {
     .insuringFutureInnerDiv {
         width: 86%;
-    
+
         position: relative;
         left: 8%;
         height: 90vh;
-        
+
         display: flex;
     }
-  }
-  @media (min-width: 501px) and (max-width: 800px) {
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
     .insuringFutureInnerDiv {
         width: 86%;
-    
+
         position: relative;
         left: 8%;
         height: 71vh;
-        
+
         display: flex;
     }
-  }
-
-
-
-
-
-
-
- 
-
-
+}

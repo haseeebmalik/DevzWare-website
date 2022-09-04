@@ -35,17 +35,18 @@ function ValueDriven() {
 
           <Grid className=" " item xs={8} sm={5} >
             <div >
-              <h2>Value Driven </h2>
-              <h2>SOFTWARE DEVELOPMENT :</h2>
+            <h3 style={{fontSize:"50px", marginTop:"35px",marginBottom:"5px"}}>Ensuring Future</h3>
+              <h2 style={{fontSize:"50px",color:"#bf186e"}}>Vision Driven </h2>
+              <h2 style={{fontSize:"15px"}}>ENTERPRISE / CUSTOMER / IDEAS / START UP</h2>
+              <h2 style={{fontSize:"15px"}}>BASED SOLUTIONS</h2>
               <p style={{ width: "57%" }}>
-                BlockChain solutions and Enterprise Service Providers, We are the
-                market-leading industry providing you with the best possible
-                technology solutions.
+                Providing Expert Solutions Around The world
+                Collaborate With Expets In Ai, Blockchain,
+                CyberSpace And Metaverse..
               </p>
               <ColorButton
                 variant="contained"
-                color="primary"
-                // className={classes.margin}
+                color="#661c9b"
                 endIcon={<AiOutlineArrowRight />}
                 className="ensuringFutureButton"
 
@@ -56,7 +57,7 @@ function ValueDriven() {
             </div>
           </Grid>
           <Grid item xs={8} sm={5} >
-            <img style={{width:"58%",height:"30%"}} src={dImg} />
+            <img style={{width:"80%",height:"30%"}} src={dImg} />
           </Grid>
         </Grid>
       </div>
