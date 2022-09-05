@@ -1,64 +1,63 @@
-import * as React from 'react';
-import IconButton from '@mui/material/IconButton';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import  React,{useState} from 'react';
+// import IconButton from '@mui/material/IconButton';
+// import Menu from '@mui/material/Menu';
+// import MenuItem from '@mui/material/MenuItem';
+// import MoreVertIcon from '@mui/icons-material/MoreVert';
+import "./OnMobileHeaderMenu.css"
+import { GiHamburgerMenu } from 'react-icons/gi';
 
-const options = [
-  'Home',
-  'About Us',
-  'Services',
-  'Blog',
-  'Contact Us',
-  'Start a Project'
-];
 
-const ITEM_HEIGHT = 48;
+
+
 
 export default function LongMenu() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = anchorEl;
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+  const [showMenu,hideMunu]=useState(false)
 
-  return (
-    <div>
-      <IconButton
-        aria-label="more"
-        id="long-button"
-        aria-controls={open ? 'long-menu' : undefined}
-        aria-expanded={open ? 'true' : undefined}
-        aria-haspopup="true"
-        onClick={handleClick}
-        sx={{color:"white"}}
-      >
-        <MoreVertIcon />
-      </IconButton>
-      <Menu
-        id="long-menu"
-        MenuListProps={{
-          'aria-labelledby': 'long-button',
-        }}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        PaperProps={{
-          style: {
-            maxHeight: ITEM_HEIGHT * 4.5,
-            width: '20ch',
-          },
-        }}
-      >
-        {options.map((option) => (
-          <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}>
-            {option}
-          </MenuItem>
-        ))}
-      </Menu>
-    </div>
-  );
+    return (
+        <div style={{color:"white"}}>
+          <GiHamburgerMenu style={{color:"white"}} onClick={()=>{
+             hideMunu(!showMenu)
+          }}/>
+
+          <div className={showMenu!==true?"hide":"hamburgerInnerDiv"}>
+            <p
+               onClick={() => {
+                const element = document.getElementById("Home");
+                element.scrollIntoView({ behavior: "smooth" });
+                hideMunu(false)
+              }}
+            >Home</p>
+            <p onClick={() => {
+          const element = document.getElementById("About Us");
+          element.scrollIntoView({ behavior: "smooth" });
+          hideMunu(false)
+        }}>About Us</p>
+            <p onClick={() => {
+          const element = document.getElementById("Services");
+          element.scrollIntoView({ behavior: "smooth" });
+          hideMunu(false)
+        }}>Services</p>
+            <p onClick={() => {
+            const element = document.getElementById("Blog");
+            element.scrollIntoView({ behavior: "smooth" });
+            hideMunu(false)
+          }}>Blogs</p>
+            <p onClick={() => {
+            const element = document.getElementById("Achievements");
+            element.scrollIntoView({ behavior: "smooth" });
+            hideMunu(false)
+          }}>Achievements</p>
+            <p  onClick={() => {
+            const element = document.getElementById("Contact Us");
+            element.scrollIntoView({ behavior: "smooth" });
+            hideMunu(false)
+          }}>Contact Us</p>
+            <p></p>
+
+          </div>
+
+
+
+        </div>
+    );
 }

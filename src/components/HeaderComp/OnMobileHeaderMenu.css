@@ -1,0 +1,22 @@
+.hide {
+    display: none;
+}
+.hamburgerInnerDiv {
+    position: absolute;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 166px;
+    
+    align-items: center;
+    right: 6%;
+    border-radius: 9px;
+    height: 563%;
+    width: 27%;
+    overflow: auto;
+}
+.hamburgerInnerDiv>p:hover{
+    
+    cursor: pointer;
+}

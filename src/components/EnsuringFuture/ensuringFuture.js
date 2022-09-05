@@ -19,7 +19,7 @@ const ColorButton = withStyles((theme) => ({
 }))(Button);
 function ValueDriven() {
   return (
-    <Box className="value_driven_container">
+    <Box className="value_driven_container" id="Home">
       <Grid className="value_driven_inner_container" container>
         <Grid item xs={12} sm={12} lg={6}>
           <h2 className="insuring_title">Ensuring Future</h2>
@@ -37,6 +37,10 @@ function ValueDriven() {
             color="#661c9b"
             endIcon={<AiOutlineArrowRight />}
             className="ensuringFutureButton"
+            onClick={()=>{
+             let element = document.getElementById("About Us");
+          element.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             Get Started Now
           </ColorButton>

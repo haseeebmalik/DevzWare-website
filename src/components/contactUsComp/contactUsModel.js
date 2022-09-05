@@ -75,7 +75,7 @@ export default function ContactUsModel({ handleOpen, handleClose, open }) {
                                             <Field
                                                 style={{
                                                     height: " 5vh",
-                                                    width:"23vw",
+                                                    width:"20vw",
                                                     borderRadius: "11px",
                                                     marginBottom:"20px",
                                                     
@@ -99,7 +99,7 @@ export default function ContactUsModel({ handleOpen, handleClose, open }) {
                                             <Field
                                                 style={{
                                                     height: " 5vh",
-                                                    width:"23vw",
+                                                    width:"20vw",
                                                     borderRadius: "11px",
                                                     marginBottom:"20px",
                                                     backgroundColor: "transparent"
@@ -125,7 +125,7 @@ export default function ContactUsModel({ handleOpen, handleClose, open }) {
                                             <Field
                                                 style={{
                                                     height: " 5vh",
-                                                    width: "23vw",
+                                                    width: "20vw",
                                                     borderRadius: "11px",
 
                                                     backgroundColor: "transparent"

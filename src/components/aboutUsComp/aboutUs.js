@@ -7,7 +7,8 @@ import circleRight from "../../images/aboutUs/CIRCLERIGHT.png";
 import circleLeft from "../../images/aboutUs/CIRCLELEFT.png";
 import bggif from "../../images/aboutUs/about-us-section-image.gif";
 import { AiOutlineArrowRight } from "react-icons/ai";
-
+import ReadMoreAboutUs from "./aboutUsReadMorePopUp";
+import {useState} from "react"
 const ColorButton = withStyles((theme) => ({
   root: {
     color: theme.palette.getContrastText(purple[500]),
@@ -18,8 +19,11 @@ const ColorButton = withStyles((theme) => ({
   },
 }))(Button);
 export default function AboutUs() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
-    <div className="aboutUsMainDiv">
+    <div className="aboutUsMainDiv" id={"About Us"}>
       <Grid
         container
         style={{
@@ -79,6 +83,7 @@ export default function AboutUs() {
                 variant="contained"
                 color="#661c9b"
                 endIcon={<AiOutlineArrowRight />}
+                onClick={handleOpen}
               >
                 Read More
               </ColorButton>
@@ -96,6 +101,9 @@ export default function AboutUs() {
           }}
         />
       </Grid>
+      {
+                <ReadMoreAboutUs handleOpen={handleOpen} handleClose={handleClose} open={open} />
+            }
     </div>
   );
 }

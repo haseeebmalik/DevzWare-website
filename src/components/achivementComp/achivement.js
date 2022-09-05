@@ -15,7 +15,7 @@ function Achivement() {
    
    
   return (
-    <div className="achivementMainDiv">
+    <div className="achivementMainDiv" id="Achievements">
       <h3 style={{ textAlign: "center", color:"white"}}>Achivements</h3>
       <Grid
       className="ContainerGridAchivement"

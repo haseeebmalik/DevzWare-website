@@ -6,18 +6,44 @@ function Header() {
   return (
     <div className="mainHeaderDiv">
       <div className="imgDiv">
-        <img src={logo}/>
+        <img src={logo} />
       </div>
       <div className="navButtonsDiv">
-        <h4>Home</h4>
-        <h4>About Us</h4>
-        <h4>Services</h4>
-        <h4>Blog</h4>
-        <h4>Achievements</h4>
-        <h4>Contact Us</h4>
+        <h4
+        
+        onClick={() => {
+          const element = document.getElementById("Home");
+          element.scrollIntoView({ behavior: "smooth" });
+        }}>Home</h4>
+        <h4 onClick={() => {
+          const element = document.getElementById("About Us");
+          element.scrollIntoView({ behavior: "smooth" });
+        }}>About Us</h4>
+        <h4 onClick={() => {
+          const element = document.getElementById("Services");
+          element.scrollIntoView({ behavior: "smooth" });
+        }}>Services</h4>
+        <h4
+          onClick={() => {
+            const element = document.getElementById("Blog");
+            element.scrollIntoView({ behavior: "smooth" });
+          }}
+        >Blogs</h4>
+        <h4
+          onClick={() => {
+            const element = document.getElementById("Achievements");
+            element.scrollIntoView({ behavior: "smooth" });
+          }}
+        >Achievements</h4>
+        <h4
+          onClick={() => {
+            const element = document.getElementById("Contact Us");
+            element.scrollIntoView({ behavior: "smooth" });
+          }}
+        >Contact Us</h4>
       </div>
       <div className="MobileMenuDiv">
-      <LongMenu  />
+        <LongMenu />
       </div>
     </div>
   );

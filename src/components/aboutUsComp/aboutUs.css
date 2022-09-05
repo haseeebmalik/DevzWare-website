@@ -18,7 +18,7 @@
 }
 .overlay_content_inner {
   align-self: center;
-  padding: 0 50% 0 5% !important;
+  /* padding: 0 50% 0 5% !important; */
 }
 .overlay_paragraph {
   font-size: 18px;

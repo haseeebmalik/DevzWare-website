@@ -24,7 +24,7 @@ function Blog() {
     },
   };
   return (
-    <div className="blogMainDiv">
+    <div className="blogMainDiv" id="Blog">
       <h3 style={{ textAlign: "center", color: "#BF186E", fontSize: "30px" }}>
         Blogs
       </h3>

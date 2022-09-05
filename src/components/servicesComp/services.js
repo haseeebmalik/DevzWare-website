@@ -16,7 +16,7 @@ import { useTheme } from "@material-ui/core";
 function Services() {
   const theme = useTheme();
   return (
-    <Box className="services_wrapper">
+    <Box className="services_wrapper" id="Services">
       <h2 className="service_title">Services</h2>
       <h2 className="service_sub_title">WHAT SERVICE WE OFFER</h2>
       <p className="services_des">

@@ -38,6 +38,9 @@
 .MobileMenuDiv {
     display: none;
 }
+.navButtonsDiv >h4 {
+    cursor: pointer;
+}
 
 
 @media only screen and (max-width: 1000px) {

@@ -29,7 +29,7 @@ function ContactUs() {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="contactUsMainDiv">
+    <div className="contactUsMainDiv" id="Contact Us">
       <img
         style={{
           position: "absolute",
