@@ -20,3 +20,6 @@
     
     cursor: pointer;
 }
+.hamburgerListItem:hover {
+    color: #bd6f9f;
+}

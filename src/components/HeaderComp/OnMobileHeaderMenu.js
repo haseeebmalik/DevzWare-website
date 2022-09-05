@@ -20,39 +20,44 @@ export default function LongMenu() {
           }}/>
 
           <div className={showMenu!==true?"hide":"hamburgerInnerDiv"}>
-            <p
+            <p className="hamburgerListItem"
                onClick={() => {
                 const element = document.getElementById("Home");
                 element.scrollIntoView({ behavior: "smooth" });
                 hideMunu(false)
               }}
             >Home</p>
-            <p onClick={() => {
+            <p className="hamburgerListItem"
+            onClick={() => {
           const element = document.getElementById("About Us");
           element.scrollIntoView({ behavior: "smooth" });
           hideMunu(false)
         }}>About Us</p>
-            <p onClick={() => {
+            <p className="hamburgerListItem"
+            onClick={() => {
           const element = document.getElementById("Services");
           element.scrollIntoView({ behavior: "smooth" });
           hideMunu(false)
         }}>Services</p>
-            <p onClick={() => {
+            <p className="hamburgerListItem"
+            onClick={() => {
             const element = document.getElementById("Blog");
             element.scrollIntoView({ behavior: "smooth" });
             hideMunu(false)
           }}>Blogs</p>
-            <p onClick={() => {
+            <p className="hamburgerListItem"
+            onClick={() => {
             const element = document.getElementById("Achievements");
             element.scrollIntoView({ behavior: "smooth" });
             hideMunu(false)
           }}>Achievements</p>
-            <p  onClick={() => {
+            <p  className="hamburgerListItem"
+            onClick={() => {
             const element = document.getElementById("Contact Us");
             element.scrollIntoView({ behavior: "smooth" });
             hideMunu(false)
           }}>Contact Us</p>
-            <p></p>
+          
 
           </div>
 

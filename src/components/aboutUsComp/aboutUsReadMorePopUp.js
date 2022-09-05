@@ -60,7 +60,7 @@ export default function ReadMoreAboutUs({ handleOpen, handleClose, open }) {
                                 
                                 position: "relative",
 
-                                left: "28vw",
+                                left: "15vw",
                                 height: "2vh"
                             }} src={crossSign} />
                         </div>
