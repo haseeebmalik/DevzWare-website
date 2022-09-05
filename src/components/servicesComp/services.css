@@ -1,30 +1,79 @@
-.servicesMainDiv {
-    color: white;
-    margin-bottom: 25%;
+.services_container {
+  background-image: url("/src/images/services/BLOCK_CHAIN.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
 }
-.ContainerGridServive{
-    width: 100%!important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.services_container_item {
+  background: linear-gradient(
+    109.46deg,
+    rgba(201, 201, 201, 0.8) 1.9%,
+    rgba(196, 196, 196, 0.1) 100.33%
+  );
+  opacity: 0.5;
+  border-radius: 27px;
+  box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.25);
+  padding: 10% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .itemGridService {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(109.46deg, rgba(201, 201, 201, 0.8) 1.9%, rgba(196, 196, 196, 0.1) 100.33%);
-    opacity: 0.8;
-    border-radius: 10px;
-   
-    margin: 2%!important;
+  text-align: center;
+  padding: 2% 6% !important;
 }
 .servicesIconDiv {
-    width: 33%;
-    height: 15vh;
-    background: #661C9B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
+  background: #661c9b !important;
+  padding: 10% !important;
+  border-radius: 10px !important;
+  margin: 5% 0 !important;
+  width: 168px;
+  height: 142px;
+  box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.25);
+  border-radius: 27px;
+}
+.services_wrapper {
+  margin-top: 10%;
+}
+.service_title {
+  color: #bf186e;
+  text-align: center;
+  font-size: 40px;
+}
+.service_sub_title {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+}
+.services_des {
+  text-align: center;
+  padding: 0 30%;
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .services_wrapper {
+    margin-top: 47%;
+  }
+  .service_title {
+    color: #bf186e;
+    text-align: center;
+    font-size: 20px;
+  }
+  .service_sub_title {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+  }
+  .services_des {
+    text-align: center;
+    padding: 0 0%;
+    color: #fff;
+  }
 }

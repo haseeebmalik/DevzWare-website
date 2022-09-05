@@ -1,24 +1,23 @@
 .footerMainDiv {
-    background-color: black;
+  background-color: black;
 }
-.ContainerGridfooter{
-    width: 100%!important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.ContainerGridfooter {
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .itemGridfooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    border-radius: 10px;
-   
-    margin: 2%!important;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+
+  /* margin: 2% !important; */
+  color: white;
 }
-.socialMediaIconsDiv >img {
-    margin-right: 2vw;
+.socialMediaIconsDiv > img {
+  margin-right: 2vw;
 }

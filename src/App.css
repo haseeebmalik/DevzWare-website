@@ -1,4 +1,9 @@
 .App {
-  background: linear-gradient(177.02deg, #0B0013 0%, #1A002D 29.66%, #2A0049 61.34%, #3F006D 99.81%)
-
+  background: linear-gradient(
+    177.02deg,
+    #0b0013 0%,
+    #1a002d 29.66%,
+    #2a0049 61.34%,
+    #3f006d 99.81%
+  );
 }
