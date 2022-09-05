@@ -1,14 +1,17 @@
+.navButtonsDiv >h4{
+cursor: pointer;
+}
+.navButtonsDiv >h4:hover{
+    color: #bd6f9f;
+    }
 .mainHeaderDiv {
     display: flex;
     justify-content: space-around;
     position: relative;
     top: 3vw;
 }
-/* .navButtonsDiv{
-    display: flex;
-} */
 .mainHeaderDiv> .imgDiv {
-    width: 50%;
+    width: 30%;
 
     position: relative;
     left: 6vw;
@@ -25,15 +28,8 @@
 
 
 }
-/* .imgDiv {
-    
-    position: relative;
-    left: 6vw;
-    top: 1vw;
-
-} */
 .mainHeaderDiv> .imgDiv >img {
-    width:30%
+    width:50%
 }
 .MobileMenuDiv {
     display: none;
