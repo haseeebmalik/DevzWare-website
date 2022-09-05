@@ -5,57 +5,72 @@ import  React,{useState} from 'react';
 // import MoreVertIcon from '@mui/icons-material/MoreVert';
 import "./OnMobileHeaderMenu.css"
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { useEffect } from 'react';
 
 
 
 
 
 export default function LongMenu() {
-  const [showMenu,hideMunu]=useState(false)
 
+  const [showMenu,hideMenu]=useState(false)
+  //This use effect is for if we click outside the menu ,the menu will disappear like a popup
+useEffect(()=>{
+
+  document.addEventListener('click', function handleClickOutsideBox(event) {
+   
+    
+  
+    const box = document.getElementById('longMenuMainDivId');
+  
+    if (!box.contains(event.target)) {
+      hideMenu(false)
+    }
+  });
+},[])
     return (
-        <div style={{color:"white"}}>
+        <div id="longMenuMainDivId" className='longMenuMainDiv' style={{color:"white"}}>
           <GiHamburgerMenu style={{color:"white"}} onClick={()=>{
-             hideMunu(!showMenu)
+             hideMenu(!showMenu)
           }}/>
 
-          <div className={showMenu!==true?"hide":"hamburgerInnerDiv"}>
+          <div id="hamburgerInnerId" className={showMenu!==true?"hide":"hamburgerInnerDiv"}>
             <p className="hamburgerListItem"
                onClick={() => {
                 const element = document.getElementById("Home");
                 element.scrollIntoView({ behavior: "smooth" });
-                hideMunu(false)
+                hideMenu(false)
               }}
             >Home</p>
             <p className="hamburgerListItem"
             onClick={() => {
           const element = document.getElementById("About Us");
           element.scrollIntoView({ behavior: "smooth" });
-          hideMunu(false)
+          hideMenu(false)
         }}>About Us</p>
             <p className="hamburgerListItem"
             onClick={() => {
           const element = document.getElementById("Services");
           element.scrollIntoView({ behavior: "smooth" });
-          hideMunu(false)
+          hideMenu(false)
         }}>Services</p>
             <p className="hamburgerListItem"
             onClick={() => {
             const element = document.getElementById("Blog");
             element.scrollIntoView({ behavior: "smooth" });
-            hideMunu(false)
+            hideMenu(false)
           }}>Blogs</p>
             <p className="hamburgerListItem"
             onClick={() => {
             const element = document.getElementById("Achievements");
             element.scrollIntoView({ behavior: "smooth" });
-            hideMunu(false)
+            hideMenu(false)
           }}>Achievements</p>
             <p  className="hamburgerListItem"
             onClick={() => {
             const element = document.getElementById("Contact Us");
             element.scrollIntoView({ behavior: "smooth" });
-            hideMunu(false)
+            hideMenu(false)
           }}>Contact Us</p>
           
 
